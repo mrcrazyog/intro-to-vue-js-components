@@ -15,7 +15,7 @@ const addUser = (userData) => {
     <ActiveUser
       v-for="user in users"
       :active-user="user.username"
-      :active-user-age="user.age"
+      :active-user-age="+user.age"
     />
 
     <UserData @add-user="addUser" />
